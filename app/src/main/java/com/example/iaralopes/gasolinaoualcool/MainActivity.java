@@ -21,7 +21,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void verResultadoFinal (View view) {
-        String melhor = valorAlcool.getText().toString();
+        String melhor;
+
+        if ((Double.parseDouble(valorAlcool.getText().toString()))/(Double.parseDouble(valorGasolina.getText().toString()))
+                < 0.7) {
+            melhor = "É melhor escolher o álcool!";
+        }
+        else {
+            melhor = "Acho que essa é a vez da gasolina!";
+        }
 
         Intent intent = new Intent(this, ResultadoFinalActivity.class);
         intent.putExtra("MELHOR", melhor);
