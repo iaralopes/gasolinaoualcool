@@ -78,14 +78,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor do Álcool"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.72" />
+        android:text="Valor do Álcoo"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
         android:id="@+id/textView3"
